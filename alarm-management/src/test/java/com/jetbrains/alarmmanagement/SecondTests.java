@@ -5,41 +5,37 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 @SpringBootTest
 class SecondTests {
 
 	@Test
-	void secondContextLoads() {
+	void secondContextLoads() throws InterruptedException {
+		Thread.sleep(10000);
 		assertEquals(1,1);
 	}
 
 	@Test
-	void secondContextLoads_1() {
+	void secondContextLoads_1() throws InterruptedException {
+		Thread.sleep(10000);
 		assertEquals(2,2);
 	}
 
 	@Test
-	void secondContextLoads_2() {
+	void secondContextLoads_2() throws InterruptedException {
+		Thread.sleep(10000);
 		assertEquals(2,2);
 	}
 
 	@Test
-	void secondContextLoads_3() {
+	void secondContextLoads_3() throws InterruptedException {
+		Thread.sleep(10000);
 		assertEquals(2,2);
 	}
 
 	@Test
-	void secondContextLoads_4() {
+	void secondContextLoads_4() throws InterruptedException {
+		Thread.sleep(10000);
 		assertEquals(2,2);
-	}
-
-	@Test
-	void secondContextLoads_5() {
-		/*if (System.currentTimeMillis() % 2 == 0) {
-			fail("Flaky test");
-
-		}*/
 	}
 }
